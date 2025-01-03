@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <table id="table" hidden="true">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>In Game?</th>
+                <th>Mode</th>
+                <th>Map</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+    
+        </tbody>
+    </table>
+
+    <!-- add a password field and a submit button -->
+    <input type="password" id="password" placeholder="Password" style="margin-bottom: 10px;">
+    <button id="submit" onclick="submitPassword()">Submit</button>
+    
+
+    <hr>
+
+    <div id="inputs" hidden="true">
+        <input type="text" id="playerName" placeholder="Player Name" style="margin-bottom: 10px;">
+        <input type="text" id="playerInfo" placeholder="Player Info" style="margin-bottom: 10px;">
+        <button id="addPlayerButton" onclick="addTarget()" style="display: block;">Add Player</button>
+    </div>
+
+    <hr>
+
+    <!-- add a div for inputting an api key with input and submit button -->
+    <div id="apiKey" hidden="true">
+        <input type="text" id="apiKeyInput" placeholder="API Key" style="margin-bottom: 10px;">
+        <button id="apiKeySubmit" onclick="submitApiKey()">Submit</button>
+    </div>
+
+    <script src="initialHandler.js"></script> <!-- Link to external JavaScript file -->
+</body>
+
+<audio id="queue-sound" src="queueSoundEffect.mp3" preload="auto"></audio>
+<audio id="start-sound" src="startSoundEffect.mp3" preload="auto"></audio>
+<audio id="snipe-sound" src="snipeSoundEffect.wav" preload="auto"></audio>
+
+</html>
